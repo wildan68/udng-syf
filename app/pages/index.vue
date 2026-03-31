@@ -1,0 +1,124 @@
+<script setup lang="ts">
+import topLeftFlower from '~/assets/images/top-left-flower.webp'
+import bottomRightFlower from '~/assets/images/bottom-right-flower.webp'
+import { OPENING_FLOWER_FADE_SEC } from '~/constants/invitation-opening'
+
+useHead({
+  title: 'Undangan Pernikahan — Yatni & Syafri',
+  meta: [
+    {
+      name: 'description',
+      content: 'Undangan Pernikahan Yatni & Syafri — Sabtu, 28 Maret 2026',
+    },
+  ],
+})
+
+const flowerEase: [number, number, number, number] = [0.22, 1, 0.36, 1]
+
+const flowerTransition = {
+  opacity: { duration: OPENING_FLOWER_FADE_SEC, ease: flowerEase },
+  scale: { duration: OPENING_FLOWER_FADE_SEC, ease: flowerEase },
+  x: {
+    duration: 6.5,
+    repeat: Infinity,
+    ease: 'easeInOut' as const,
+  },
+  y: {
+    duration: 5,
+    repeat: Infinity,
+    ease: 'easeInOut' as const,
+  },
+  rotate: {
+    duration: 7,
+    repeat: Infinity,
+    ease: 'easeInOut' as const,
+  },
+}
+
+const flowerTopLeftAnimate = {
+  opacity: 1,
+  scale: 1,
+  x: [0, 11, 0, -9, 0],
+  y: [0, -9, 0, 7, 0],
+  rotate: [0, 2.2, 0, -1.8, 0],
+}
+
+const flowerBottomRightAnimate = {
+  opacity: 1,
+  scale: 1,
+  x: [0, -10, 0, 12, 0],
+  y: [0, 8, 0, -7, 0],
+  rotate: [0, -2, 0, 2.4, 0],
+}
+
+const coverWasOpened = useState('invitation-cover-opened', () => false)
+</script>
+
+<template>
+  <div class="invitation-app">
+    <div
+      class="inv-page-flowers"
+      :class="{ 'inv-page-flowers--content': coverWasOpened }"
+      aria-hidden="true"
+    >
+      <Motion
+        as="img"
+        class="inv-page-flowers__img inv-page-flowers__img--tl"
+        :src="topLeftFlower"
+        alt=""
+        width="200"
+        height="200"
+        :initial="{ opacity: 0, scale: 0.88 }"
+        :animate="flowerTopLeftAnimate"
+        :transition="flowerTransition"
+      />
+      <div class="inv-page-flowers__br-mirror">
+        <Motion
+          as="img"
+          class="inv-page-flowers__img inv-page-flowers__img--br"
+          :src="bottomRightFlower"
+          alt=""
+          width="200"
+          height="200"
+          :initial="{ opacity: 0, scale: 0.88 }"
+          :animate="flowerBottomRightAnimate"
+          :transition="flowerTransition"
+        />
+      </div>
+    </div>
+    <InvitationCover bride-name="Yatni" groom-name="Syafri" />
+    <main class="inv-main">
+      <section id="opening">
+        <InvitationHero />
+      </section>
+      <section id="quotes">
+        <InvitationQuote />
+      </section>
+      <section id="mempelai">
+        <InvitationCouple />
+      </section>
+      <section id="acara">
+        <InvitationEvents />
+      </section>
+      <section id="countdown" class="inv-main__countdown-wrap">
+        <InvitationCountdown />
+      </section>
+      <section id="maps">
+        <InvitationMaps />
+      </section>
+      <section id="rsvp">
+        <InvitationRsvp />
+      </section>
+      <section id="gift">
+        <InvitationGift />
+      </section>
+      <section id="thanks">
+        <InvitationClosing />
+      </section>
+    </main>
+    <InvitationMusic />
+    <InvitationNav />
+  </div>
+</template>
+
+<style src="~/assets/css/pages/index.css"></style>

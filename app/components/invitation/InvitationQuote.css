@@ -1,0 +1,26 @@
+.inv-quote {
+  text-align: center;
+  padding: 2rem 1.25rem 2.5rem;
+  background: var(--inv-bg-section);
+}
+
+.inv-quote__body {
+  margin: 0 auto;
+  max-width: 26rem;
+  padding: 0 0.5rem;
+  border: none;
+}
+
+.inv-quote__body p {
+  font-size: 0.95rem;
+  color: var(--inv-text-muted);
+  line-height: 1.75;
+  margin: 0 0 0.75rem;
+}
+
+.inv-quote__body cite {
+  font-size: 0.9rem;
+  font-style: normal;
+  font-weight: 600;
+  color: var(--inv-accent);
+}

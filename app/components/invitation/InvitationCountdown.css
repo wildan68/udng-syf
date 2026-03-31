@@ -1,0 +1,52 @@
+.inv-countdown {
+  text-align: center;
+  padding: 2rem 1rem 2.5rem;
+}
+
+.inv-countdown__hint {
+  font-size: 0.85rem;
+  letter-spacing: 0.15em;
+  text-transform: uppercase;
+  color: var(--inv-text-muted);
+  margin: 0 0 1.25rem;
+}
+
+.inv-countdown__grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 0.5rem;
+  max-width: 22rem;
+  margin: 0 auto;
+}
+
+.inv-countdown__cell {
+  background: var(--inv-white);
+  border-radius: var(--inv-radius);
+  padding: 0.85rem 0.35rem;
+  box-shadow: var(--inv-shadow);
+}
+
+.inv-countdown__num {
+  display: block;
+  font-family: var(--inv-font-serif);
+  font-size: 1.5rem;
+  font-weight: 700;
+  color: var(--inv-accent-dark);
+  line-height: 1.1;
+}
+
+.inv-countdown__unit {
+  display: block;
+  font-size: 0.68rem;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  color: var(--inv-text-muted);
+  margin-top: 0.35rem;
+}
+
+.inv-countdown__footer {
+  font-size: 0.75rem;
+  color: var(--inv-text-muted);
+  margin: 1rem 0 0;
+  opacity: 0.8;
+}

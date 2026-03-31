@@ -1,0 +1,86 @@
+.inv-opening {
+  position: fixed;
+  inset: 0;
+  z-index: 10000;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 1.25rem;
+  background: linear-gradient(
+    165deg,
+    #f8f4ec 0%,
+    var(--inv-bg-cream) 45%,
+    #ebe4d8 100%
+  );
+}
+
+.inv-opening__panel {
+  text-align: center;
+  max-width: 22rem;
+  width: 100%;
+}
+
+.inv-opening__eyebrow {
+  font-size: 0.72rem;
+  letter-spacing: 0.35em;
+  text-transform: uppercase;
+  color: var(--inv-text-muted);
+  margin: 0 0 0.5rem;
+}
+
+.inv-opening__names {
+  font-family: var(--inv-font-script);
+  font-size: 2.85rem;
+  font-weight: 400;
+  color: var(--inv-accent-dark);
+  line-height: 1.15;
+  margin: 0 0 1.75rem;
+}
+
+.inv-opening__and {
+  display: inline-block;
+  margin: 0 0.15em;
+  font-size: 0.85em;
+}
+
+.inv-opening__to-label {
+  font-size: 0.95rem;
+  margin: 0 0 0.25rem;
+  color: var(--inv-text);
+}
+
+.inv-opening__to-line {
+  font-size: 0.88rem;
+  color: var(--inv-text-muted);
+  margin: 0 0 0.35rem;
+}
+
+.inv-opening__guest {
+  font-size: 1.35rem;
+  font-weight: 600;
+  color: var(--inv-accent-dark);
+  margin: 0 0 1.75rem;
+}
+
+.inv-opening__btn {
+  font-family: var(--inv-font-serif);
+  font-size: 0.9rem;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  color: var(--inv-white);
+  background: var(--inv-accent-dark);
+  border: none;
+  padding: 0.85rem 2rem;
+  border-radius: 999px;
+  cursor: pointer;
+  box-shadow: var(--inv-shadow);
+  transition: background 0.2s ease, transform 0.15s ease;
+}
+
+.inv-opening__btn:hover {
+  background: var(--inv-accent);
+}
+
+.inv-opening__btn:active {
+  transform: scale(0.98);
+}

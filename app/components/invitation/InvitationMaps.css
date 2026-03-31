@@ -1,0 +1,37 @@
+.inv-maps {
+  text-align: center;
+  padding: 2rem 1.25rem 2.5rem;
+  background: var(--inv-bg-cream);
+}
+
+.inv-maps__title {
+  font-size: 1.05rem;
+  font-weight: 700;
+  color: var(--inv-accent-dark);
+  margin: 0 0 0.75rem;
+}
+
+.inv-maps__address {
+  font-size: 0.92rem;
+  color: var(--inv-text-muted);
+  line-height: 1.65;
+  margin: 0 0 1.25rem;
+}
+
+.inv-maps__btn {
+  display: inline-block;
+  font-family: var(--inv-font-serif);
+  font-size: 0.88rem;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: var(--inv-white);
+  background: var(--inv-accent-dark);
+  padding: 0.75rem 1.75rem;
+  border-radius: 999px;
+  text-decoration: none;
+  transition: background 0.2s ease;
+}
+
+.inv-maps__btn:hover {
+  background: var(--inv-accent);
+}

@@ -1,0 +1,40 @@
+.inv-closing {
+  text-align: center;
+  padding: 2rem 1.25rem 2rem;
+  background: var(--inv-bg-section);
+}
+
+.inv-closing__text {
+  font-size: 0.92rem;
+  color: var(--inv-text-muted);
+  line-height: 1.75;
+  margin: 0 auto 1.25rem;
+  max-width: 26rem;
+}
+
+.inv-closing__sign {
+  font-size: 0.95rem;
+  font-weight: 600;
+  margin: 0 0 0.25rem;
+  color: var(--inv-text);
+}
+
+.inv-closing__names {
+  font-family: var(--inv-font-script);
+  font-size: 2rem;
+  margin: 0;
+  color: var(--inv-accent-dark);
+}
+
+.inv-closing__footer {
+  margin-top: 2rem;
+  padding-top: 1.25rem;
+  border-top: 1px solid rgba(139, 115, 85, 0.2);
+}
+
+.inv-closing__brand {
+  font-size: 0.75rem;
+  color: var(--inv-text-muted);
+  margin: 0;
+  opacity: 0.85;
+}

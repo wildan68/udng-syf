@@ -1,0 +1,50 @@
+.inv-page-flowers {
+  position: fixed;
+  inset: 0;
+  z-index: 10001;
+  pointer-events: none;
+}
+
+.inv-page-flowers--content {
+  z-index: 2;
+}
+
+.inv-page-flowers__img {
+  position: absolute;
+  width: min(46vw, 11.5rem);
+  max-width: none;
+  height: auto;
+  object-fit: contain;
+  user-select: none;
+}
+
+.inv-page-flowers__img--tl {
+  top: -1.8rem;
+  left: -1rem;
+  transform-origin: 0 0;
+}
+
+.inv-page-flowers__br-mirror {
+  position: absolute;
+  right: -1.8rem;
+  bottom: -1rem;
+}
+
+.inv-page-flowers__img--br {
+  position: relative;
+  right: auto;
+  bottom: auto;
+  transform-origin: 100% 100%;
+}
+
+.inv-main {
+  padding-bottom: 5.5rem;
+}
+
+.inv-main section {
+  scroll-margin-top: 0.5rem;
+}
+
+.inv-main__countdown-wrap {
+  background: var(--inv-bg-section);
+}

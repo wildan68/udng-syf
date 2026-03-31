@@ -1,0 +1,119 @@
+.inv-cover {
+  position: fixed;
+  inset: 0;
+  z-index: 10000;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 1.25rem;
+  background: linear-gradient(
+    165deg,
+    #f8f4ec 0%,
+    var(--inv-bg-cream) 45%,
+    #ebe4d8 100%
+  );
+}
+
+.inv-cover__frame {
+  position: relative;
+  width: 100%;
+  max-width: 22rem;
+  padding: clamp(1.25rem, 5vw, 2rem);
+}
+
+.inv-cover__border {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: fill;
+  pointer-events: none;
+  z-index: 0;
+}
+
+.inv-cover__panel {
+  position: relative;
+  z-index: 1;
+  text-align: center;
+  width: 100%;
+}
+
+.inv-cover__eyebrow {
+  font-size: 0.72rem;
+  letter-spacing: 0.35em;
+  text-transform: uppercase;
+  color: var(--inv-text-muted);
+  margin: 0 0 0.5rem;
+}
+
+.inv-cover__couple {
+  font-family: var(--inv-font-script);
+  font-size: 2.65rem;
+  font-weight: 400;
+  color: var(--inv-accent-dark);
+  line-height: 1.2;
+  margin: 0 0 1.75rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.1rem;
+}
+
+.inv-cover__bride,
+.inv-cover__groom {
+  display: block;
+}
+
+.inv-cover__ampersand {
+  font-family: var(--inv-font-script);
+  font-size: 1.5rem;
+  line-height: 1;
+  margin: 0.15rem 0;
+  opacity: 0.9;
+}
+
+.inv-cover__recipient {
+  margin-bottom: 1.75rem;
+}
+
+.inv-cover__to-label {
+  font-size: 0.95rem;
+  margin: 0 0 0.25rem;
+  color: var(--inv-text);
+}
+
+.inv-cover__to-line {
+  font-size: 0.88rem;
+  color: var(--inv-text-muted);
+  margin: 0 0 0.35rem;
+}
+
+.inv-cover__to-name {
+  font-size: 1.35rem;
+  font-weight: 600;
+  color: var(--inv-accent-dark);
+  margin: 0;
+}
+
+.inv-cover__btn {
+  font-family: var(--inv-font-serif);
+  font-size: 0.9rem;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: var(--inv-white);
+  background: var(--inv-accent-dark);
+  border: none;
+  padding: 0.85rem 2rem;
+  border-radius: 999px;
+  cursor: pointer;
+  box-shadow: var(--inv-shadow);
+  transition: background 0.2s ease, transform 0.15s ease;
+}
+
+.inv-cover__btn:hover {
+  background: var(--inv-accent);
+}
+
+.inv-cover__btn:active {
+  transform: scale(0.98);
+}

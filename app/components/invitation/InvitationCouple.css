@@ -1,0 +1,69 @@
+.inv-couple {
+  text-align: center;
+  padding: 2rem 1.25rem 2.5rem;
+  background: var(--inv-bg-section);
+}
+
+.inv-couple__initials {
+  display: flex;
+  justify-content: center;
+  gap: 1.25rem;
+  margin-bottom: 1rem;
+}
+
+.inv-couple__initials span {
+  font-family: var(--inv-font-serif);
+  font-size: 2rem;
+  font-weight: 700;
+  color: var(--inv-gold);
+  width: 3rem;
+  height: 3rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 1px solid rgba(184, 160, 122, 0.45);
+  border-radius: 50%;
+  background: var(--inv-white);
+}
+
+.inv-couple__bismillah {
+  font-size: 1.05rem;
+  font-weight: 600;
+  color: var(--inv-accent-dark);
+  margin: 0 0 1rem;
+}
+
+.inv-couple__intro {
+  font-size: 0.95rem;
+  color: var(--inv-text-muted);
+  line-height: 1.75;
+  margin: 0 0 1.75rem;
+}
+
+.inv-couple__names-block {
+  max-width: 22rem;
+  margin: 0 auto;
+}
+
+.inv-couple__name {
+  font-family: var(--inv-font-script);
+  font-size: 2.25rem;
+  font-weight: 400;
+  color: var(--inv-accent-dark);
+  margin: 0 0 0.5rem;
+  line-height: 1.2;
+}
+
+.inv-couple__parents {
+  font-size: 0.9rem;
+  color: var(--inv-text-muted);
+  line-height: 1.65;
+  margin: 0;
+}
+
+.inv-couple__with {
+  font-size: 0.95rem;
+  font-style: italic;
+  margin: 1.25rem 0;
+  color: var(--inv-accent);
+}

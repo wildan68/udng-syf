@@ -1,0 +1,38 @@
+.inv-events {
+  text-align: center;
+  padding: 2rem 1.25rem 2.5rem;
+  background: var(--inv-bg-cream);
+}
+
+.inv-events__title {
+  font-size: 1.15rem;
+  font-weight: 700;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  color: var(--inv-accent-dark);
+  margin: 0 0 0.65rem;
+}
+
+.inv-events__date {
+  font-size: 1rem;
+  font-weight: 600;
+  margin: 0 0 0.35rem;
+  color: var(--inv-text);
+}
+
+.inv-events__time,
+.inv-events__place,
+.inv-events__address {
+  font-size: 0.92rem;
+  color: var(--inv-text-muted);
+  margin: 0 0 0.35rem;
+  line-height: 1.65;
+}
+
+.inv-events__divider {
+  width: 4rem;
+  height: 1px;
+  background: var(--inv-gold);
+  margin: 1.75rem auto;
+  opacity: 0.6;
+}
