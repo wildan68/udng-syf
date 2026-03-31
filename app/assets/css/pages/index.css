@@ -1,3 +1,7 @@
+* {
+  margin: 0;
+}
+
 .inv-page-flowers {
   position: fixed;
   inset: 0;

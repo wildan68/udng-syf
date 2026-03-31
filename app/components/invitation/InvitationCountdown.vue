@@ -71,7 +71,6 @@ function pad(n: number) {
         <span class="inv-countdown__unit">Detik</span>
       </div>
     </div>
-    <p class="inv-countdown__footer">Atur Countdown</p>
     <InvitationFlowers />
   </div>
 </template>

@@ -68,8 +68,19 @@ import {
 } from '~/constants/invitation-rsvp'
 
 const showForm = ref(false)
+const route = useRoute()
+const invitedName = computed(() => {
+  const q = route.query.to
+  const raw = Array.isArray(q) ? q[0] : q
+  if (!raw) return ''
+  try {
+    return decodeURIComponent(String(raw))
+  } catch {
+    return String(raw)
+  }
+})
 const form = reactive({
-  name: '',
+  name: invitedName.value,
   message: '',
   attendance: '' as '' | AttendanceValue,
 })

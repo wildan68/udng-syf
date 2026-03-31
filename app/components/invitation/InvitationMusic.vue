@@ -1,36 +1,78 @@
 <script setup lang="ts">
-const audioRef = ref<HTMLAudioElement | null>(null)
-const isPlaying = ref(false)
+import { Howl } from 'howler'
 
-function toggle() {
-  const el = audioRef.value
-  if (!el) return
-  if (isPlaying.value) {
-    el.pause()
-    isPlaying.value = false
-  } else {
-    el.play().catch(() => {
-      /* file opsional: /wedding-music.mp3 di folder public */
+const isPlaying = ref(false)
+let sound: Howl | null = null
+let soundReady: Promise<Howl> | null = null
+
+const coverWasOpened = useState('invitation-cover-opened', () => false)
+
+/** Howler memutar lewat Audio / Web Audio — tidak memicu unduhan file seperti navigasi langsung ke .mp3 */
+function getSound(): Promise<Howl | null> {
+  if (typeof window === 'undefined') return Promise.resolve(null)
+  if (sound) return Promise.resolve(sound)
+  if (!soundReady) {
+    soundReady = Promise.resolve().then(() => {
+      const instance = new Howl({
+        src: ['/background-music.mp3'],
+        loop: true,
+        html5: true,
+        preload: true,
+        format: ['mp3'],
+      })
+      instance.on('play', () => {
+        isPlaying.value = true
+      })
+      instance.on('pause', () => {
+        isPlaying.value = false
+      })
+      instance.on('stop', () => {
+        isPlaying.value = false
+      })
+      sound = instance
+      return instance
     })
-    isPlaying.value = true
   }
+  return soundReady
 }
 
-function onEnded() {
-  isPlaying.value = false
+/** Otomatis putar saat undangan dibuka — interaksi pengguna, tidak diblokir browser */
+watch(
+  coverWasOpened,
+  async (opened) => {
+    if (!opened) return
+    const s = await getSound()
+    s?.play()
+  },
+  { flush: 'post' },
+)
+
+onMounted(async () => {
+  if (coverWasOpened.value) {
+    const s = await getSound()
+    s?.play()
+  }
+})
+
+onBeforeUnmount(() => {
+  sound?.unload()
+  sound = null
+  soundReady = null
+})
+
+async function toggle() {
+  const s = await getSound()
+  if (!s) return
+  if (s.playing()) {
+    s.pause()
+  } else {
+    s.play()
+  }
 }
 </script>
 
 <template>
   <div class="inv-music">
-    <audio
-      ref="audioRef"
-      class="inv-music__audio"
-      src="/wedding-music.mp3"
-      loop
-      preload="none"
-      @pause="onPause"
-    />
     <button
       type="button"
       class="inv-music__btn"

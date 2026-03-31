@@ -51,6 +51,16 @@ const flowerBottomRightAnimate = {
   rotate: [0, -2, 0, 2.4, 0],
 }
 
+/** Fade + slide-up saat section masuk viewport */
+const sectionRevealEase: [number, number, number, number] = [0.22, 1, 0.36, 1]
+const sectionRevealTransition = {
+  duration: 0.62,
+  ease: sectionRevealEase,
+}
+const sectionRevealInitial = { opacity: 0, y: 28 }
+const sectionRevealInView = { opacity: 1, y: 0 }
+const sectionInViewOptions = { once: true, amount: 0.22 as const }
+
 const coverWasOpened = useState('invitation-cover-opened', () => false)
 </script>
 
@@ -88,33 +98,97 @@ const coverWasOpened = useState('invitation-cover-opened', () => false)
     </div>
     <InvitationCover bride-name="Yatni" groom-name="Syafri" />
     <main class="inv-main">
-      <section id="opening">
+      <Motion
+        as="section"
+        id="opening"
+        :initial="sectionRevealInitial"
+        :while-in-view="sectionRevealInView"
+        :transition="sectionRevealTransition"
+        :in-view-options="sectionInViewOptions"
+      >
         <InvitationHero />
-      </section>
-      <section id="quotes">
+      </Motion>
+      <Motion
+        as="section"
+        id="quotes"
+        :initial="sectionRevealInitial"
+        :while-in-view="sectionRevealInView"
+        :transition="sectionRevealTransition"
+        :in-view-options="sectionInViewOptions"
+      >
         <InvitationQuote />
-      </section>
-      <section id="mempelai">
+      </Motion>
+      <Motion
+        as="section"
+        id="mempelai"
+        :initial="sectionRevealInitial"
+        :while-in-view="sectionRevealInView"
+        :transition="sectionRevealTransition"
+        :in-view-options="sectionInViewOptions"
+      >
         <InvitationCouple />
-      </section>
-      <section id="acara">
+      </Motion>
+      <Motion
+        as="section"
+        id="acara"
+        :initial="sectionRevealInitial"
+        :while-in-view="sectionRevealInView"
+        :transition="sectionRevealTransition"
+        :in-view-options="sectionInViewOptions"
+      >
         <InvitationEvents />
-      </section>
-      <section id="countdown" class="inv-main__countdown-wrap">
+      </Motion>
+      <Motion
+        as="section"
+        id="countdown"
+        class="inv-main__countdown-wrap"
+        :initial="sectionRevealInitial"
+        :while-in-view="sectionRevealInView"
+        :transition="sectionRevealTransition"
+        :in-view-options="sectionInViewOptions"
+      >
         <InvitationCountdown />
-      </section>
-      <section id="maps">
+      </Motion>
+      <Motion
+        as="section"
+        id="maps"
+        :initial="sectionRevealInitial"
+        :while-in-view="sectionRevealInView"
+        :transition="sectionRevealTransition"
+        :in-view-options="sectionInViewOptions"
+      >
         <InvitationMaps />
-      </section>
-      <section id="rsvp">
+      </Motion>
+      <Motion
+        as="section"
+        id="rsvp"
+        :initial="sectionRevealInitial"
+        :while-in-view="sectionRevealInView"
+        :transition="sectionRevealTransition"
+        :in-view-options="sectionInViewOptions"
+      >
         <InvitationRsvp />
-      </section>
-      <section id="gift">
+      </Motion>
+      <Motion
+        as="section"
+        id="gift"
+        :initial="sectionRevealInitial"
+        :while-in-view="sectionRevealInView"
+        :transition="sectionRevealTransition"
+        :in-view-options="sectionInViewOptions"
+      >
         <InvitationGift />
-      </section>
-      <section id="thanks">
+      </Motion>
+      <Motion
+        as="section"
+        id="thanks"
+        :initial="sectionRevealInitial"
+        :while-in-view="sectionRevealInView"
+        :transition="sectionRevealTransition"
+        :in-view-options="sectionInViewOptions"
+      >
         <InvitationClosing />
-      </section>
+      </Motion>
     </main>
     <InvitationMusic />
     <InvitationNav />
