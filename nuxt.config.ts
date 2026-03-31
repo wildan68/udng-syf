@@ -10,4 +10,7 @@ export default defineNuxtConfig({
       supabaseKey: process.env.SUPABASE_KEY,
     },
   },
+  nitro: {
+    preset: 'cloudflare-pages'
+  }
 })
