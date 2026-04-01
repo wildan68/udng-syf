@@ -11,13 +11,13 @@
   --inv-bg-cream: #47651F;
   --inv-bg-section: #5c7a2d;
   --inv-text: #fff;
-  --inv-text-muted: #e0e0e0;
+  --inv-text-muted: rgb(226, 226, 226);
   --inv-accent: #698a34;
   --inv-accent-dark: #739a36;
   --inv-gold: #e0e0e0;
   --inv-white: #e0e0e0;
   --inv-nav-bg: #263014;
-  --inv-font-serif: 'Bromello', Georgia, serif;
+  --inv-font-serif: 'Cormorant Garamond', Georgia, serif;
   --inv-font-script: 'Bromello', cursive;
   --inv-radius: 4px;
   --inv-shadow: 0 4px 24px rgba(61, 52, 40, 0.08);
