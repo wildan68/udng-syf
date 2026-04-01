@@ -7,7 +7,7 @@
 .inv-rsvp__title {
   font-size: 1.05rem;
   font-weight: 700;
-  color: var(--inv-accent-dark);
+  color: var(--inv-text);
   margin: 0 0 1rem;
 }
 
@@ -23,7 +23,7 @@
 
 .inv-rsvp__cite {
   font-size: 0.85rem;
-  color: var(--inv-accent);
+  color: var(--inv-text);
   margin: 0 0 1.25rem;
 }
 
@@ -77,7 +77,7 @@
   padding: 0.55rem 0.65rem;
   border: 1px solid rgba(139, 115, 85, 0.35);
   border-radius: var(--inv-radius);
-  background: var(--inv-white);
+  background: var(--inv-bg-cream);
   color: var(--inv-text);
 }
 
@@ -87,10 +87,14 @@
   padding: 0.65rem;
   border: none;
   border-radius: var(--inv-radius);
-  background: var(--inv-gold);
+  background: var(--inv-accent);
   color: var(--inv-white);
   font-weight: 600;
   cursor: pointer;
+}
+
+.inv-rsvp__submit:hover {
+  background: var(--inv-accent-dark);
 }
 
 .inv-rsvp__submit:disabled {
@@ -124,7 +128,7 @@
 .inv-rsvp__wall-title {
   font-size: 0.95rem;
   font-weight: 700;
-  color: var(--inv-accent-dark);
+  color: var(--inv-text);
   margin: 0 0 1rem;
 }
 
@@ -140,7 +144,7 @@
 
 .inv-rsvp__item {
   padding: 0.85rem 1rem;
-  background: rgba(255, 255, 255, 0.65);
+  background: var(--inv-bg-cream);
   border-radius: var(--inv-radius);
   border: 1px solid rgba(139, 115, 85, 0.2);
 }
@@ -160,12 +164,12 @@
   letter-spacing: 0.04em;
   padding: 0.2rem 0.5rem;
   border-radius: 999px;
-  background: rgba(139, 115, 85, 0.15);
-  color: var(--inv-accent-dark);
+  background: var(--inv-bg-section);
+  color: var(--inv-text-muted);
 }
 
 .inv-rsvp__badge[data-a='tidak'] {
-  background: rgba(120, 120, 120, 0.15);
+  background: var(--inv-bg-section);
   color: var(--inv-text-muted);
 }
 

@@ -20,7 +20,7 @@
 }
 
 .inv-countdown__cell {
-  background: var(--inv-white);
+  background: var(--inv-bg-cream);
   border-radius: var(--inv-radius);
   padding: 0.85rem 0.35rem;
   box-shadow: var(--inv-shadow);
@@ -31,7 +31,7 @@
   font-family: var(--inv-font-serif);
   font-size: 1.5rem;
   font-weight: 700;
-  color: var(--inv-accent-dark);
+  color: var(--inv-text);
   line-height: 1.1;
 }
 

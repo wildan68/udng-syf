@@ -32,7 +32,7 @@
   font-family: var(--inv-font-script);
   font-size: 2.85rem;
   font-weight: 400;
-  color: var(--inv-accent-dark);
+  color: var(--inv-text);
   line-height: 1.15;
   margin: 0 0 1.75rem;
 }
@@ -58,7 +58,7 @@
 .inv-opening__guest {
   font-size: 1.35rem;
   font-weight: 600;
-  color: var(--inv-accent-dark);
+  color: var(--inv-text);
   margin: 0 0 1.75rem;
 }
 

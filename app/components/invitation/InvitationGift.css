@@ -7,7 +7,7 @@
 .inv-gift__title {
   font-size: 1.05rem;
   font-weight: 700;
-  color: var(--inv-accent-dark);
+  color: var(--inv-text);
   margin: 0 0 0.85rem;
 }
 
@@ -28,7 +28,7 @@
 }
 
 .inv-gift__card {
-  background: var(--inv-white);
+  background: var(--inv-bg-section);
   border-radius: var(--inv-radius);
   padding: 1rem 1.1rem;
   box-shadow: var(--inv-shadow);
@@ -59,7 +59,7 @@
   font-weight: 700;
   font-variant-numeric: tabular-nums;
   margin: 0;
-  color: var(--inv-accent-dark);
+  color: var(--inv-text);
 }
 
 .inv-gift__copy {
@@ -69,10 +69,10 @@
   min-width: 2.25rem;
   min-height: 2.25rem;
   padding: 0.25rem 0.4rem;
-  border: 1px solid var(--inv-gold);
+  border: 1px solid var(--inv-accent);
   border-radius: var(--inv-radius);
   background: var(--inv-bg-section);
-  color: var(--inv-accent);
+  color: var(--inv-text);
   cursor: pointer;
   font-size: 0.72rem;
   font-weight: 600;
@@ -84,9 +84,9 @@
 }
 
 .inv-gift__copy:hover {
-  background: var(--inv-white);
+  background: var(--inv-bg-section);
   border-color: var(--inv-accent);
-  color: var(--inv-accent-dark);
+  color: var(--inv-text);
 }
 
 .inv-gift__copy:focus-visible {
@@ -108,7 +108,7 @@
   font-size: 0.8rem;
   letter-spacing: 0.12em;
   text-transform: uppercase;
-  color: var(--inv-accent);
+  color: var(--inv-text);
   margin: 0 0 1rem;
 }
 

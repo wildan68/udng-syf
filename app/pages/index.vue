@@ -1,6 +1,6 @@
 <script setup lang="ts">
-import topLeftFlower from '~/assets/images/top-left-flower.webp'
-import bottomRightFlower from '~/assets/images/bottom-right-flower.webp'
+import topLeftFlower from '~/assets/images/top-left-flower.png'
+import bottomRightFlower from '~/assets/images/bottom-right-flower.png'
 import { OPENING_FLOWER_FADE_SEC } from '~/constants/invitation-opening'
 
 useHead({

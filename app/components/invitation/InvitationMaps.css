@@ -7,7 +7,7 @@
 .inv-maps__title {
   font-size: 1.05rem;
   font-weight: 700;
-  color: var(--inv-accent-dark);
+  color: var(--inv-text);
   margin: 0 0 0.75rem;
 }
 

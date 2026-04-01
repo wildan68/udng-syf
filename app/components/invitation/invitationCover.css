@@ -8,9 +8,9 @@
   padding: 1.25rem;
   background: linear-gradient(
     165deg,
-    #f8f4ec 0%,
+    #7b9955 0%,
     var(--inv-bg-cream) 45%,
-    #ebe4d8 100%
+    #7b9955 100%
   );
 }
 
@@ -36,6 +36,7 @@
   z-index: 1;
   text-align: center;
   width: 100%;
+  padding: 1rem 0;
 }
 
 .inv-cover__eyebrow {
@@ -47,12 +48,12 @@
 }
 
 .inv-cover__couple {
+  margin: 4rem 0;
   font-family: var(--inv-font-script);
   font-size: 2.65rem;
   font-weight: 400;
-  color: var(--inv-accent-dark);
+  color: var(--inv-text);
   line-height: 1.2;
-  margin: 0 0 1.75rem;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -91,7 +92,7 @@
 .inv-cover__to-name {
   font-size: 1.35rem;
   font-weight: 600;
-  color: var(--inv-accent-dark);
+  color: var(--inv-text);
   margin: 0;
 }
 

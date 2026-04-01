@@ -15,7 +15,7 @@
   font-family: var(--inv-font-serif);
   font-size: 2rem;
   font-weight: 700;
-  color: var(--inv-gold);
+  color: var(--inv-accent);
   width: 3rem;
   height: 3rem;
   display: flex;
@@ -29,7 +29,7 @@
 .inv-couple__bismillah {
   font-size: 1.05rem;
   font-weight: 600;
-  color: var(--inv-accent-dark);
+  color: var(--inv-text);
   margin: 0 0 1rem;
 }
 
@@ -49,7 +49,7 @@
   font-family: var(--inv-font-script);
   font-size: 2.25rem;
   font-weight: 400;
-  color: var(--inv-accent-dark);
+  color: var(--inv-text);
   margin: 0 0 0.5rem;
   line-height: 1.2;
 }
@@ -65,5 +65,5 @@
   font-size: 0.95rem;
   font-style: italic;
   margin: 1.25rem 0;
-  color: var(--inv-accent);
+  color: var(--inv-text);
 }

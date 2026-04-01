@@ -9,7 +9,7 @@
   font-weight: 700;
   letter-spacing: 0.06em;
   text-transform: uppercase;
-  color: var(--inv-accent-dark);
+  color: var(--inv-text);
   margin: 0 0 0.65rem;
 }
 
@@ -32,7 +32,7 @@
 .inv-events__divider {
   width: 4rem;
   height: 1px;
-  background: var(--inv-gold);
+  background: var(--inv-text);
   margin: 1.75rem auto;
   opacity: 0.6;
 }

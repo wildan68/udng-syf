@@ -94,11 +94,11 @@
 }
 
 .inv-nav__item--active .inv-nav__icon {
-  color: var(--inv-gold);
+  color: var(--inv-accent);
 }
 
 .inv-nav__item--active:hover {
-  color: var(--inv-gold);
+  color: var(--inv-accent);
 }
 
 .inv-nav__item--active:hover .inv-nav__label {
