@@ -23,7 +23,7 @@ import borderFrame from '~/assets/images/border.webp'
         <p class="inv-hero__and">and</p>
         <h2 class="inv-hero__groom">Syafri</h2>
         <div class="inv-hero__card">
-          <p class="inv-hero__date">Sabtu, 28 Maret 2026</p>
+          <p class="inv-hero__date">Selasa, 7 April 2026</p>
           <InvitationFlowers />
         </div>
       </div>
