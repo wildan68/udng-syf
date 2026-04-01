@@ -108,7 +108,7 @@ const coverBtnAnimate = {
           :transition="coverBtnTransition"
           @click="openInvitation"
         >
-          Buka undangan
+        Buka undangan
         </Motion>
         <InvitationFlowers />
       </div>
