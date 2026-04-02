@@ -6,6 +6,14 @@
     <p class="inv-events__time">16.00 WIB s/d Selesai</p>
     <p class="inv-events__place">Kediaman Mempelai Wanita<br/>
     Ds. Tembeleng RT 13/02 Jatibarang - Brebes</p>
+    <a
+      class="inv-maps__btn"
+      href="https://maps.app.goo.gl/seYcJxjQJEP5Ws8h7"
+      target="_blank"
+      rel="noopener noreferrer"
+    >
+      Buka Maps
+    </a>
 
     <div class="inv-events__divider" />
 
@@ -14,6 +22,14 @@
     <p class="inv-events__time">12.00 WIB s/d Selesai</p>
     <p class="inv-events__place">Kediaman Mempelai Pria<br/>
       Ds. Tembeleng RT 13/02 Jatibarang - Brebes</p>
+      <a
+      class="inv-maps__btn"
+      href="https://maps.app.goo.gl/4bCYHG7jR1bmjT4d7"
+      target="_blank"
+      rel="noopener noreferrer"
+    >
+      Buka Maps
+    </a>
     <InvitationFlowers />
   </div>
 </template>

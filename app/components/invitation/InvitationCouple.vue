@@ -2,7 +2,7 @@
   <div class="inv-couple">
     <InvitationFlowers />
     <div class="inv-couple__initials">
-      <span>Y</span>
+      <span>C</span>
       <span>S</span>
     </div>
     <p class="inv-couple__bismillah">Bismillahirrahmanirrahim</p>

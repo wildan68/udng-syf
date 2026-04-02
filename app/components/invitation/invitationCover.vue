@@ -13,7 +13,7 @@ const props = withDefaults(
     groomName?: string
   }>(),
   {
-    brideName: 'Yatni',
+    brideName: 'Cahaya',
     groomName: 'Syafri',
   },
 )

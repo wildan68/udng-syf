@@ -6,7 +6,7 @@
       dan memberikan do'a restu kepada kedua mempelai.
     </p>
     <p class="inv-closing__sign">Hormat Kami</p>
-    <p class="inv-closing__names">Yatni &amp; Syafri</p>
+    <p class="inv-closing__names">Cahaya &amp; Syafri</p>
     <InvitationFlowers />
     <footer class="inv-closing__footer">
       <p class="inv-closing__brand">CreativeWedding.id</p>

@@ -4,11 +4,11 @@ import bottomRightFlower from '~/assets/images/bottom-right-flower.png'
 import { OPENING_FLOWER_FADE_SEC } from '~/constants/invitation-opening'
 
 useHead({
-  title: 'Undangan Pernikahan — Yatni & Syafri',
+  title: 'Undangan Pernikahan — Cahaya & Syafri',
   meta: [
     {
       name: 'description',
-      content: 'Undangan Pernikahan Yatni & Syafri — Sabtu, 28 Maret 2026',
+      content: 'Undangan Pernikahan Cahaya & Syafri — Selasa, 7 April 2026',
     },
   ],
 })
@@ -96,7 +96,7 @@ const coverWasOpened = useState('invitation-cover-opened', () => false)
         />
       </div>
     </div>
-    <InvitationCover bride-name="Yatni" groom-name="Syafri" />
+    <InvitationCover bride-name="Cahaya" groom-name="Syafri" />
     <main class="inv-main">
       <Motion
         as="section"

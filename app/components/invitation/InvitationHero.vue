@@ -19,7 +19,7 @@ import borderFrame from '~/assets/images/border.webp'
           <InvitationFlowers />
         </div>
         <p class="inv-hero__label">THE WEDDING OF</p>
-        <h2 class="inv-hero__bride">Yatni</h2>
+        <h2 class="inv-hero__bride">Cahaya</h2>
         <p class="inv-hero__and">and</p>
         <h2 class="inv-hero__groom">Syafri</h2>
         <div class="inv-hero__card">
