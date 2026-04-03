@@ -5,7 +5,7 @@
     <p class="inv-events__date">Selasa, 7 April 2026</p>
     <p class="inv-events__time">18.30 WIB s/d Selesai</p>
     <p class="inv-events__place">Kediaman Mempelai Wanita<br/>
-    Ds. Tembeleng RT 13/02 Jatibarang - Brebes</p>
+    Ds. Tembeleng RT 16/03 Jatibarang - Brebes</p>
     <a
       class="inv-maps__btn"
       href="https://maps.app.goo.gl/seYcJxjQJEP5Ws8h7"
@@ -21,10 +21,10 @@
     <p class="inv-events__date">Selasa, 7 April 2026</p>
     <p class="inv-events__time">12.00 WIB s/d Selesai</p>
     <p class="inv-events__place">Kediaman Mempelai Pria<br/>
-      Ds. Tembeleng RT 13/02 Jatibarang - Brebes</p>
+      Ds. Tembeleng RT 16/03 Jatibarang - Brebes</p>
       <a
       class="inv-maps__btn"
-      href="https://maps.app.goo.gl/4bCYHG7jR1bmjT4d7"
+      href="https://maps.app.goo.gl/seYcJxjQJEP5Ws8h7"
       target="_blank"
       rel="noopener noreferrer"
     >
